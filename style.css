@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.4;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  height: 100%;
+}
+
+/* header */
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header {
+  border-bottom: 1px solid #404141;
+}
+
+.menu_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 0.2em;
+}
+
+.logo {
+  height: 55px;
+}
+
+.menu_list {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  gap: 15px;
+}
+
+.nav_menu {
+  margin-right: auto;
+  margin-left: 3em;
+}
+
+.menu_link {
+  padding: 1.2em 0;
+}
+
+.menu_link:hover {
+  border-top: 2px solid #28ebcf;
+}
+
+.buttons {
+}
+
+/* .lang {
+  border: 1px solid red;
+} */
+
+#lang_icon {
+  font-size: 1.4em;
+  padding: 0.9em 0;
+}
+
+#lang_icon {
+  border-top: 2px solid transparent;
+}
+
+#lang_icon:hover {
+  border-top: 2px solid #28ebcf;
+}
+
+.login {
+  color: #28ebcf;
+  border: 1px solid #28ebcf;
+  padding: 0.5em 1.2em;
+  border-radius: 9px 5px 9px 5px;
+  margin: 0 0.8em;
+  transition: all 400ms;
+  text-transform: uppercase;
+}
+
+.login:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  transition: all 400ms;
+}
+
+.register {
+  text-transform: uppercase;
+  color: #333;
+  background-color: #28ebcf;
+  border: 1px solid #28ebcf;
+  padding: 0.5em 1.2em;
+  border-radius: 9px 5px 9px 5px;
+
+  transition: all 400ms;
+}
+
+.register:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+
+  transition: all 400ms;
+}
+
+/* Broker section */
+
+section {
+  margin-top: 5em;
+}
+
+.section_broker{
+  display: flex;
+}
+
+
+.section_title_wrapper {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.section_title {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.section_text {
+  font-size: 1.4em;
+}
+
+/* card wrapper */
+
+.broker_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.broker_card {
+  border: 1px solid #2e3133;
+  border-radius: 10px;
+  padding: 2em;
+  background-color: #191a1c;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.prime_wrapper{
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.card_name_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: .5em; */
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #7f8081;
+}
+
+.name p {
+  margin: 0;
+  line-height: 1;
+}
+
+.name :last-child {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #fff;
+}
+
+
+.price_wrapper{
+  display: flex;
+  align-items: center;
+}
+
+
+.price{
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+.monat_wrapper{
+  margin-left: .2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #d9dada;
+}
+
+
+.price_cent{
+ 
+  font-size: 1.5em;
+  font-weight: 100;
+}
+
+.monat{
+  font-size: .7em;
+  font-weight: 100;
+}
+
+
+
+/* list */
+
+
+.list{
+  font-size: .8em;
+  line-height: 2;
+  
+}
+
+
+.list_item i{
+  color: #2b9586;
+  font-size: 1.1em;
+  margin-right: .5em;
+}
+
+.list_item{
+  /* padding-left: 10px; */
+}
+
+.bold{
+  font-weight: 600;
+}
+
+
+
+.name_prime, .name_prime-flex {
+  color: rgb(255, 217, 154);
+    linear-gradient(
+      82deg,
+      rgba(255, 217, 154, 1) 0%,
+      rgba(204, 147, 67, 1) 100%
+    );
+}
+
+
+.btn{
+  border: 1px solid #4e4e50;
+  text-align: center;
+  margin-top: 2em;
+  font-size: .9em;
+  font-weight: 600;
+  padding: .8em 2em;
+  border-radius: 5px;
+}
+
+.btn_free{
+  color: #28ebcf;
+}
+
+.btn_prime{
+  background: rgb(255,217,154);
+  background: linear-gradient(82deg, rgba(255,217,154,1) 0%, rgba(204,147,67,1) 100%);
+
+  color: #191a1c;
+  
+}
+
+.btn_prime_flex{
+  color: #fcd594;
+}
+
+.flat_rate{
+  background-color: #28ebcf;
+  text-align: center;
+  font-size: .8em;
+  font-weight: 600;
+  color: #191a1c;
+  padding: .5em 0;
+}
+
+
+.card_prime{
+  padding: 0;
+  transform: scale(1.1);
+}
+
+#small{
+  
+  font-size: .6em;
+  text-transform: lowercase;
+}
+
+
+.detail{
+  color: #28ebcf;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.detail:hover{
+  text-decoration: underline;
+}
