@@ -9,7 +9,7 @@ body {
   color: #fff;
   font-size: 15px;
   line-height: 1.4;
-  background-color: black;
+  background-color:#060707;
 }
 
 a {
@@ -22,7 +22,20 @@ button {
 }
 
 img {
-  height: 100%;
+  width: 100%;
+}
+
+
+
+.btn{
+  border: 1px solid #4e4e50;
+  text-align: center;
+  margin-top: 2em;
+  font-size: .9em;
+  font-weight: 600;
+  padding: .8em 2em;
+  border-radius: 5px;
+  transition: all 300ms;
 }
 
 /* header */
@@ -30,6 +43,7 @@ img {
 .container {
   max-width: 1140px;
   margin: auto;
+  padding: 0 1em;
 }
 
 header {
@@ -44,7 +58,7 @@ header {
 }
 
 .logo {
-  height: 55px;
+  width:  170px;
 }
 
 .menu_list {
@@ -121,10 +135,73 @@ header {
   transition: all 400ms;
 }
 
+
+/*------ hero header --------*/
+
+.section_hero{
+  padding: 5em 0;
+}
+
+.hero_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  
+  
+}
+
+
+.hero_content{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+ 
+}
+
+.hero_title{
+  /* font-size: 7em; */
+  font-size: clamp(2rem, 0.5714rem + 7.1429vw, 7rem);
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: .5em;
+}
+
+.hero_text{
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.btn_open_account{
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+width: fit-content;
+background-color: #28ebcf;
+color: #191a1c;
+border-radius: 18px 5px 18px 5px;
+
+}
+
+
+.hero_background img{
+width: 100%;
+opacity: .5;
+}
+
+.hero_image{
+  max-width: 100%;
+}
+
+.hero_image img{
+  width: 100%;
+}
+
+
 /* Broker section */
 
 section {
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .section_broker{
@@ -269,16 +346,7 @@ section {
 }
 
 
-.btn{
-  border: 1px solid #4e4e50;
-  text-align: center;
-  margin-top: 2em;
-  font-size: .9em;
-  font-weight: 600;
-  padding: .8em 2em;
-  border-radius: 5px;
-  transition: all 300ms;
-}
+
 
 .btn_free{
   color: #28ebcf;
@@ -350,4 +418,26 @@ section {
 
 .detail:hover{
   text-decoration: underline;
+}
+
+
+/* responsive */
+
+
+@media (max-width: 768px) {
+
+.nav_menu, .lang, .login{
+  display: none;
+}
+
+	.hero_wrapper{
+    
+    grid-template-columns: 1fr ;
+    
+  }
+
+  .card_prime{
+    
+    transform: scale(1);
+  }
 }
